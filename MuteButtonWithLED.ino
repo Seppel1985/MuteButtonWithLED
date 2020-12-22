@@ -9,7 +9,7 @@
 
 int ledPinGreen = 1;
 int ledPinRed = 0;
-int analogInPin2 = 1; // analogRead(1) erfolgt an P2
+int analogInPin2 = 1; // analogRead(1) is on P2
 
 // Variables will change:
 bool toggleMode = LOW;
@@ -47,19 +47,8 @@ void loop() {
   if (doOnce == HIGH){
     digitalWrite(ledPinGreen, ledGreen);
     digitalWrite(ledPinRed, ledRed);
-    //DigiKeyboard.sendKeyStroke(0);
-    //DigiKeyboard.println("Hello Digispark!");
-    //DigiKeyboard.delay(1000);
 
   // put your setup code here, to run once:
-  //DigiKeyboard.sendKeyStroke(0);
-  //DigiKeyboard.sendKeyStroke(0, MOD_GUI_LEFT);
-  //DigiKeyboard.delay(1000);
-  //DigiKeyboard.sendKeyStroke(KEY_C);
-  //DigiKeyboard.sendKeyStroke(KEY_M);
-  //DigiKeyboard.sendKeyStroke(KEY_D);
-  //DigiKeyboard.delay(1000);
-  //DigiKeyboard.sendKeyStroke(KEY_ENTER, MOD_CONTROL_LEFT + MOD_SHIFT_LEFT);
   DigiKeyboard.sendKeyStroke(KEY_M, MOD_CONTROL_LEFT + MOD_SHIFT_LEFT);
   
     doOnce = LOW;    
